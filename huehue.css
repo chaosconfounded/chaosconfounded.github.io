@@ -252,7 +252,7 @@ a {
         max-height: 400px;
     }
     #small {
-        transform: translate(155px, 50px)
+        transform: translate(155px, 140px)
     }
     .typetype {
         transform: translateY(160px);
