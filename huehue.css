@@ -201,6 +201,11 @@ a {
     color: magenta;
 }
 
+.title::after {
+    font-weight: bolder;
+    content: " |";
+}
+
 /*top heading end*/
 
 #small {
@@ -246,8 +251,10 @@ a {
 @media (max-width: 786px) { 
     header {
         max-width: 400px;
-        font-size: 12px;
+        display: flexbox;
+        flex-direction: column;
     }
+
     .things {
         max-width: 400px;
         max-height: 400px;
@@ -260,5 +267,13 @@ a {
     }
     .placeholdertext {
         transform: translateY(160px);
+    }
+    
+    .title {
+        text-decoration: underline;
+    }
+
+    .title::after {
+        content: "";
     }
 }
