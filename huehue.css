@@ -246,6 +246,7 @@ a {
 @media (max-width: 786px) { 
     header {
         max-width: 400px;
+        font-size: 12px;
     }
     .things {
         max-width: 400px;
