@@ -127,7 +127,7 @@
 
 * {
     overflow: hidden;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', 'Courier Prime','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace
 }
 
 body {
@@ -162,10 +162,6 @@ nav {
 .columns {
     width: 50%;
     height: auto;
-}
-
-.aaa {
-    font-style: italic;
 }
 
 a {
@@ -212,14 +208,15 @@ a {
     max-width: auto;
     height: 100px;
     margin: auto;
-    transform: translate(250px, 200px)
+    transform: translate(255px, 200px)
 }
 
 /*container  */
 
+
 .things {
     width: 600px;
-    height: 60vh;
+    height: 600px;
     background-color: #ffffff;
 /*     border-radius: 10px; */
     margin: auto;
@@ -233,7 +230,7 @@ a {
     white-space: nowrap; 
     margin: 0 auto; 
     overflow: hidden;
-    transform: translateY(210px);
+    transform: translateY(200px);
     animation: typing 3.5s steps(30, end);
 }
 @keyframes typing {
@@ -244,4 +241,23 @@ a {
 .placeholdertext {
     text-align: center;
     transform: translateY(210px);
+}
+
+@media (max-width: 786px) { 
+    header {
+        max-width: 400px;
+    }
+    .things {
+        max-width: 400px;
+        max-height: 400px;
+    }
+    #small {
+        transform: translate(155px, 50px)
+    }
+    .typetype {
+        transform: translateY(160px);
+    }
+    .placeholdertext {
+        transform: translateY(160px);
+    }
 }
