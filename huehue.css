@@ -251,8 +251,14 @@ a {
 @media (max-width: 786px) { 
     header {
         max-width: 400px;
+        height: auto;
         display: flexbox;
         flex-direction: column;
+    }
+
+    nav a {
+        height: 10px;
+        width: 400px;
     }
 
     .things {
@@ -271,6 +277,8 @@ a {
     
     .title {
         text-decoration: underline;
+        width: 400px;
+        height: auto;
     }
 
     .title::after {
