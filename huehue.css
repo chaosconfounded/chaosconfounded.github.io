@@ -250,15 +250,23 @@ a {
 
 @media (max-width: 786px) { 
     header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         max-width: 400px;
         height: auto;
-        display: flexbox;
-        flex-direction: column;
     }
 
     nav a {
-        height: 10px;
+        height: auto;
         width: 400px;
+        margin: 5px 0px 5px 0px;
+    }
+
+    nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
     }
 
     .things {
@@ -283,5 +291,33 @@ a {
 
     .title::after {
         content: "";
+    }
+
+    a {
+        position: relative;
+        height:auto;
+        width: 400px;
+    }
+
+    .c:hover{
+        color: cyan;
+        font-weight: bolder;
+        border-bottom: 2px solid cyan;
+        border-top: 2px solid cyan;
+    }
+    
+    .y:hover{
+        color: yellow;
+        font-weight: bolder;
+        border-bottom: 2px solid yellow;
+        border-top: 2px solid yellow;
+    }
+    
+    .m:hover{
+        color: magenta;
+        font-weight: bolder;
+        border-bottom: 2px solid magenta;
+        border-top: 2px solid magenta;
+        margin-bottom: 0px;
     }
 }
